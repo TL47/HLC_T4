@@ -1,9 +1,3 @@
-function hojaEstilos(tema:) {
-    let estilo=document.getElementById('estilo')
-    switch (tema) {
-        case 'claro':
-            estilo.setAttribute('href', 'claro.css')
-        break;
-    }
-
-}
+document.getElementById('añadirNota').addEventListener('click', function nota() {
+    const añadirNota = document.
+})
