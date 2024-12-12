@@ -33,3 +33,28 @@ textarea {
     margin-top: 10px;
     border: 0;
 }
+
+button {
+    cursor: pointer;
+}
+
+.noNota {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.eliminarTodas {
+    background-color: rgb(224, 75, 75);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 0;
+    margin-left: 20px;
+}
