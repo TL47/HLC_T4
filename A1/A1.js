@@ -41,3 +41,10 @@ function eliminarTodasNotas() {
     // Y se muestra de nuevo el mensaje de 'Todavía no hay notas'
     document.getElementById('hojita').classList.remove('oculto');
 }
+
+// no fufa lo de abajo
+// document.addEventListener('keyup', function(event) {
+//     if (event.key == 'Enter') {
+//         event.target
+//     }
+// });
