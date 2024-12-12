@@ -6,24 +6,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="A1.css">
+<link id="estilo" type="text/css" rel="stylesheet" href="A1.css">
     <title>Bloc de Notas</title>
 </head>
 <body>
     <div class="colores">
-    <h1>Bloc de Notas</h1>
-    <label for="tema">Tema:</label>
-    <select name="tema" id="tema">
-        <option value="claro">Claro</option>
-        <option value="oscuro">Oscuro</option>
-        <option value="azul">Azul</option>
-        <option value="rosa">Rosa</option>
-        <option value="verde">Verde</option>
+        <h1>Bloc de Notas</h1>
+    <div>
+        <label for="tema">Tema:</label>
+        <select name="tema" onchange="hojaEstilos(tema.value)" id="tema">
+        <option value="claro" style="background-color: white;">🌞 Claro</option>
+        <option value="oscuro" style="background-color: black; color: white;">🌙 Oscuro</option>
+        <option value="azul" style="background-color: rgb(177, 243, 243); color: rgb(1, 1, 156);">🌊 Azul</option>
+        <option value="rosa">🌸 Rosa</option>
+        <option value="verde">🍀 Verde</option>
     </select><br><br>
     </div>
-    <div class="nota">
-        <textarea name="notas" id="notas" placeholder="Escribe tu nota aquí..."></textarea>
     </div>
-    <button onclick="añadirNota()">Añadir nota</button>
+    <div class="container">
+        <div class="nota">
+            <textarea name="notas" rows="9" id="notas" placeholder="Escribe tu nota aquí..."></textarea>
+        </div>
+        <button class="añadirNota" onclick="añadirNota()">Añadir nota</button>
+        <h2><b>Notas</b></h2>
+        <div>
+            <i>Todavía no hay notas 🍃</i>
+        </div>
+    </div>
+    <script src="A1.js"></script>
 </body>
 </html>
